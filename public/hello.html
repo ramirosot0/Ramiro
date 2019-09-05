@@ -9,6 +9,218 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+<style>
+    ul.bar{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #333;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 500;
+    }
+    #barr{
+        float: right;
+        border-right: 1px solid #bbb;
+    }
+    li a.barrr{
+        display: block;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    a:active{
+        border: 2px solid #D4D4D4;
+        background-color: red
+    }
+
+    li:last-child{
+        border-right: none;
+    }
+
+    /* ------------about------------------*/
+    .padtop{
+        padding-top: 155px;
+        padding-bottom: 100px;
+        background-color: #aba9a8;
+
+    }
+    p.pabout{
+        font-size: 20px;
+        margin-left: 60px;
+    }
+    hr.fline{
+        border: solid grey 2px;
+        width: 60%;
+        align: right;
+
+    }
+    #ndline{
+        border: solid black 1px;
+        margin-top: -2px;
+    }
+    img.st{
+        width: 300px;
+        border-radius: 60px;
+        margin-left: 90px
+    }
+    /*-----------prtfolio----------------*/
+    div.imageletra{
+        font-size: 23px;
+    }
+
+    .hovereffect {
+        width:100%;
+        height:100%;
+        float:left;
+        overflow:hidden;
+        position:relative;
+        text-align:center;
+        cursor:default;
+    }
+
+    .hovereffect .overlay {
+        width:100%;
+        height:100%;
+        position:absolute;
+        overflow:hidden;
+        top:0;
+        left:0;
+        opacity:0;
+        background-color:rgba(0,0,0,0.5);
+        -webkit-transition:all .4s ease-in-out;
+        transition:all .4s ease-in-out
+    }
+
+    .hovereffect img {
+        display:block;
+        position:relative;
+        -webkit-transition:all .4s linear;
+        transition:all .4s linear;
+    }
+
+    .hovereffect h2 {
+        text-transform:uppercase;
+        color:#fff;
+        text-align:center;
+        position:relative;
+        font-size:17px;
+        background:rgba(0,0,0,0.6);
+        -webkit-transform:translatey(-100px);
+        -ms-transform:translatey(-100px);
+        transform:translatey(-100px);
+        -webkit-transition:all .2s ease-in-out;
+        transition:all .2s ease-in-out;
+        padding:10px;
+    }
+
+    .hovereffect a.info {
+        text-decoration:none;
+        display:inline-block;
+        text-transform:uppercase;
+        color:#fff;
+        border:1px solid #fff;
+        background-color:transparent;
+        opacity:0;
+        filter:alpha(opacity=0);
+        -webkit-transition:all .2s ease-in-out;
+        transition:all .2s ease-in-out;
+        margin:50px 0 0;
+        padding:7px 14px;
+    }
+
+    .hovereffect a.info:hover {
+        box-shadow:0 0 5px #fff;
+    }
+
+    .hovereffect:hover img {
+        -ms-transform:scale(1.2);
+        -webkit-transform:scale(1.2);
+        transform:scale(1.2);
+    }
+
+    .hovereffect:hover .overlay {
+        opacity:1;
+        filter:alpha(opacity=100);
+    }
+
+    .hovereffect:hover h2,.hovereffect:hover a.info {
+        opacity:1;
+        filter:alpha(opacity=100);
+        -ms-transform:translatey(0);
+        -webkit-transform:translatey(0);
+        transform:translatey(0);
+    }
+
+    .hovereffect:hover a.info {
+        -webkit-transition-delay:.2s;
+        transition-delay:.2s;
+    }
+
+    .baki{
+        background-color: #787776;
+        margin-top: -20px;
+        margin-bottom:;
+
+    }
+    #sides{
+        background-image: url("https://i.ytimg.com/vi/_kaqhy2iV7c/maxresdefault.jpg");
+    }
+    hr.ffline{
+        border: solid grey 2px;
+        width: 50%;
+    }
+    /*-----------contact--me-----------*/
+    .lastmes{
+        font-size: 25px;
+        font-family: ;
+        color: white;
+    }
+    .contactback{
+        background-color:#3d3c3c;
+        margin-top: -20px;
+    }
+    #boxes{
+        margin-left: 150px;
+    }
+    .sidess{
+        background-image: url("https://i.ytimg.com/vi/_kaqhy2iV7c/maxresdefault.jpg");
+    }
+
+    /*--------------socialmedia-------*/
+
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 15px;
+    }
+    .fa:hover {
+        opacity: 0.7;
+    }
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+    .fa-free-code-camp{
+        background: green;
+        color: black;
+    }
+    .backlast{
+        background-color: #1c1c1c;
+        margin-top: -20px;
+        text: center;
+    }
+    .fa-twitter{
+        background: #55ACEE;
+        color: white;
+    }
+
+</style>
 <!-- ------Horizonrtal bar-----  -->
 <ul class="bar">
 
