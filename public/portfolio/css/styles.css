@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    color: gray;
+}
+header, main, nav, footer{
+    text-align: center;
+}
+nav a{
+    padding: 15px;
+    padding-bottom: 4px;
+    font-size: 1.8em;
+    text-decoration: none; /*removes underline*/
+    color: white;          /*by default, links are blue*/
+}
+nav a.active{
+    color: chartreuse;
+}
+
+nav a:hover{
+    border-bottom: 2px green solid;
+    font-size: 2em;
+    transition: .4s;
+}
+
+#me,#welcomeText {
+    float: left;
+    text-align: left;
+}
+
+#pic{
+    width: 250px; height: 300px;
+    border-radius: 40px;
+}
+footer{
+    clear: left;
+    font-size: smaller;
+    color: lightcoral;
+
+
+}
