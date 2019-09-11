@@ -34,7 +34,7 @@ li a:hover{
 footer{
     clear: left;
     font-size: smaller;
-    color: tomato;
+    color: #351a00;
 }
 .stp{
     text-align: left;
@@ -83,4 +83,10 @@ footer{
 #csumb-logo{
     height: 60px;
     width: 80px;
+}
+#line{
+    width: 60%;
+    height: 4px;
+    color: black;
+
 }
