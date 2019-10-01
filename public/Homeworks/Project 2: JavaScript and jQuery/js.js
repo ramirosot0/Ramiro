@@ -17,7 +17,7 @@ $(document).ready(function() {
             $("#checkOut").attr("class", "bg-warning text-white");
         }
         else{
-            $("#checkOut").html("correct elsefinal");
+            $("#checkOut").html("correct lsefinal");
             $("#checkOut").attr("class", "bg-warning text-white");
         }
 
