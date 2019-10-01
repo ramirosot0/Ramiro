@@ -2,16 +2,26 @@ $(document).ready(function() {
 
     $("button").on("click", buyNow);
 
-    let q1Response = $("q1").val();
-    let q2Response = $("q2").val();
+    let q1Response = $("#quest1").val();
+
+
 
     function buyNow() {
-        if (q1Response == "" && q2Response == ""){
-            $("#checkOut").html("correct");
+
+        if (q1Response == "on"){
+            $("#checkOut").html("correct one");
             $("#checkOut").attr("class", "bg-warning text-white");
         }
-        $("#checkOut").html("correct");
-        $("#checkOut").attr("class", "bg-warning text-white");
+        else if (q1Response == "tw"){
+            $("#checkOut").html("correct two");
+            $("#checkOut").attr("class", "bg-warning text-white");
+        }
+        else{
+            $("#checkOut").html("correct elsefinal");
+            $("#checkOut").attr("class", "bg-warning text-white");
+        }
+
+
 
     }
 
