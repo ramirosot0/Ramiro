@@ -5,11 +5,9 @@ $(document).ready(function() {
     let shirtPrice = 5.99;
     let jeansPrice = 10.99;
     let tax = 1.48;
-    let totalPrice = 0;
-
-
 
     function buyNow() {
+        let totalPrice = 0;
         let q1Response = $("#quest1").val();
         let q2Response = $("#quest2").val();
 
@@ -51,7 +49,12 @@ $(document).ready(function() {
             $("#checkOut").html("Order Summary");
             $("#checkOut1").html("Items:  $"+totalPrice);
             $("#checkOut2").html("Shipping & handling:$0.00");
-            $("#checkOu3").html("Total before tax: " + tax);
+            $("#checkOut3").html("Total before tax: " + totalPrice);
+            $("#checkOut4").html("Estimsted tax to be collected: "+tax);
+            $("#checkOut5").html("Total:" + (totalPrice+tax));
+            $("#checkOut6").html("Order Total: " +(totalPrice+tax));
+            $("#checkOut6").attr("class", "bg-success text-dark");
+
 
 
 
