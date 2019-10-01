@@ -7,3 +7,16 @@ float: left;
     padding-left: 40%;
 }
 
+button{
+    position: absolute;
+    padding-left: 10%;
+}
+
+#tCero{
+    text-align: left;
+    padding-left: 160px;
+}
+#jCero{
+    text-align: left;
+    padding-left: 160px;
+}
