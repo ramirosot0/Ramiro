@@ -1,12 +1,12 @@
 tr, td{
 
-    border:1px gray solid;
+     border:1px gray solid;
 
-    text-align: right;
+     text-align: right;
 
-    padding:5px;
+     padding:5px;
 
-}
+ }
 
 body, th {
 
@@ -18,4 +18,12 @@ table {
 
     margin: 0 auto;
 
+}
+
+#redShipping, #promoError{
+    color: red;
+}
+
+button{
+    color: red;
 }
