@@ -102,5 +102,10 @@ $(document).ready(function() {
     -ajax to populate
     -lestener functions
     -add function after every ajax
+
+    $(".bet").unbind().click(function() {
+    //Stuff
+    });
+
  */
 
