@@ -7,7 +7,7 @@ $(document).ready(function () {
 
         var zip = $("#zip").val();
 
-        var url = "http://api.openweathermap.org/data/2.5/weather?zip="+zip+",us&APPID="+APPID+"&units=imperial";
+        var url = "https://api.openweathermap.org/data/2.5/weather?zip="+zip+",us&APPID="+APPID+"&units=imperial";
 
         $.ajax({
 
