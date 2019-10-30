@@ -1,2 +1,3 @@
 var faker = require('faker');
-var  ransomNmae = faker.name.findName();
+var  randomName = faker.name.findName();
+console.log(randomName);
